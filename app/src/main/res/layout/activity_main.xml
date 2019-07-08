@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/parentsBack"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,19 +13,86 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
- 
+
         <TextView
-            android:id="@+id/TextScreen1"
+            android:id="@+id/TextScreen"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:gravity="end"
-            android:hint="input text ....."
-            android:maxLines="1"
+
+            android:hint="0"
             android:padding="15dp"
-            android:textSize="45sp" />
+           android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/TextResult"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="end"
+            android:textColor="@color/buttonColor"
+
+            android:hint="Result"
+            android:padding="5dp"
+            android:textSize="25dp" />
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/verticalMental"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/buttonOfNumPercent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="％"
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonOfNumSquare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
+            android:text="x^"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/buttonOfRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="√"
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/buttonOfNumDivided"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="÷"
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/verticalFirst"
@@ -36,39 +104,47 @@
         >
 
         <Button
-            android:id="@+id/b1"
+            android:id="@+id/buttonOfNumOne"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="1"
-            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
             android:textSize="50dp" />
 
         <Button
-            android:id="@+id/b2"
+            android:id="@+id/buttonOfNumTwo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="2"
-            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
             android:textSize="50dp" />
 
         <Button
-            android:id="@+id/b3"
+            android:id="@+id/buttonOfNumthree"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="3"
-            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
             android:textSize="50dp" />
 
         <Button
-            android:id="@+id/b4bazm"
+            android:id="@+id/buttonOfNumMultiple"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="*"
-            android:textColor="@android:color/darker_gray"
+            android:text="✖"
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
             android:textSize="50dp" />
 
 
@@ -84,40 +160,52 @@
         >
 
         <Button
-            android:id="@+id/b5"
+            android:id="@+id/buttonOfNumFour"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="4"
-            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
             android:textSize="50dp" />
 
         <Button
-            android:id="@+id/b6"
+            android:id="@+id/buttonOfNumFive"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="5"
-            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
             android:textSize="50dp" />
 
         <Button
-            android:id="@+id/b7"
+            android:id="@+id/buttonOfNumSix"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="6"
-            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
+
             android:textSize="50dp" />
 
         <Button
-            android:id="@+id/b8gum"
+            android:id="@+id/buttonOfNumPlus"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="+"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="50dp" />
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
+
+            android:textSize="60dp"
+
+            android:textStyle="bold" />
 
 
     </LinearLayout>
@@ -132,39 +220,47 @@
         >
 
         <Button
-            android:id="@+id/b9"
+            android:id="@+id/buttonOfSeven"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="7"
-            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
             android:textSize="50dp" />
 
         <Button
-            android:id="@+id/b10"
+            android:id="@+id/buttonOfNumEight"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="8"
-            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
             android:textSize="50dp" />
 
         <Button
-            android:id="@+id/b11"
+            android:id="@+id/buttonOfNumNine"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="9"
-            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
             android:textSize="50dp" />
 
         <Button
-            android:id="@+id/b12hanac"
+            android:id="@+id/buttonOfNumMinus"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="-"
-            android:textColor="@android:color/darker_gray"
+            android:text="−" android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
+
             android:textSize="50dp" />
 
 
@@ -178,40 +274,50 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/b13C"
+            android:id="@+id/buttonOfNumClear"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="C"
-            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
             android:textSize="50dp" />
 
         <Button
-            android:id="@+id/b14"
+            android:id="@+id/buttonOfNumZero"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="0"
-            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
             android:textSize="50dp" />
 
         <Button
-            android:id="@+id/b15amb"
+            android:id="@+id/buttonOfNumDot"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="."
-            android:textColor="@android:color/darker_gray"
-            android:textSize="50dp" />
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
+            android:textSize="70dp"
+            android:textStyle="bold" />
 
         <Button
-            android:id="@+id/b16hav"
+            android:id="@+id/buttonOfNumEqual"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="="
-            android:textColor="@android:color/darker_gray"
-            android:textSize="50dp" />
+            android:background="@drawable/buttonshape"
+
+            android:textColor="@color/buttonColor"
+            android:textSize="50dp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>

@@ -9,8 +9,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View .OnClickListener{
-    private int[] numericButtons = {R.id.b1, R.id.b2, R.id.b3, R.id.b5, R.id.b6, R.id.b7, R.id.b9, R.id.b10, R.id.b11, R.id.b14};
-    private int[] operatorButtons = {R.id.b4bazm,R.id.b8gum,R.id.b15amb,R.id.b16hav,R.id.b13C,R.id.b12hanac};
+    private int[] numericButtons = {R.id.buttonOfNumOne, R.id.buttonOfNumTwo, R.id.buttonOfNumthree, R.id.buttonOfNumFour, R.id.buttonOfNumFive, R.id.buttonOfNumSix, R.id.buttonOfSeven, R.id.buttonOfNumEight, R.id.buttonOfNumNine, R.id.buttonOfNumZero};
+    private int[] operatorButtons = {R.id.buttonOfNumMultiple,R.id.buttonOfNumPlus,R.id.buttonOfNumMinus,R.id.buttonOfNumEqual,R.id.buttonOfNumClear,R.id.buttonOfNumDot};
 
     private TextView textScreen;
     @Override
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View .OnClickList
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide(); // hide the title bar
 
-         this.textScreen = (TextView) findViewById(R.id.TextScreen1);
+         this.textScreen = (TextView) findViewById(R.id.TextScreen);
 
 
     }
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View .OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.b1:
+            case R.id.buttonOfNumOne:
                 textScreen.setText("1");
         }
 
