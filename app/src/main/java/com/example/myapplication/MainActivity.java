@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View .OnClickList
         getSupportActionBar().hide(); // hide the title bar
 
          this.textScreen = (TextView) findViewById(R.id.TextScreen);
+        //hello
 
 
     }
