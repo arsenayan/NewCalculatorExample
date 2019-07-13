@@ -1,330 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorBlack"
-    android:orientation="vertical"
+    style="@style/MarginLinearStyle"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/textLinear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        style="@style/ForTextLinear">
 
         <TextView
             android:id="@+id/TextScreen"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:gravity="end"
-            android:padding="15dp"
-            android:text="0"
-
-            android:textColor="@color/buttonColor"
-            android:textSize="45sp"
-            android:textStyle="bold" />
+            style="@style/TextScreenStyle" />
 
         <TextView
             android:id="@+id/TextResult"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="end"
-            android:padding="5dp"
-
-
-            android:text="Result"
-
-            android:textColor="@color/buttonColor"
-            android:textSize="25dp"
-            android:textStyle="bold" />
+            style="@style/TextResultStyle" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/verticalMental"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-
-        android:orientation="horizontal"
+        style="@style/LogicLinearStyle"
 
         >
 
         <Button
             android:id="@+id/buttonOfNumPercent"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/logicbuttenshape"
-            android:text="％"
-
-            android:textColor="@color/buttonColor"
-            android:textSize="30dp"
-            android:textStyle="bold" />
+            style="@style/LogicButtonStyleFor"
+            android:text="@string/percent" />
 
         <Button
-            android:id="@+id/buttonOfNumSquare"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/logicbuttenshape"
-
-            android:text="x^"
-            android:textColor="@color/buttonColor"
-            android:textSize="30dp" />
+            android:id="@+id/buttonOfNumPlusMinus"
+            style="@style/LogicButtonStyleFor"
+            android:text="@string/PlusMinus" />
 
         <Button
             android:id="@+id/buttonOfRoot"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/logicbuttenshape"
-            android:text="√"
-
-            android:textColor="@color/buttonColor"
-            android:textSize="30dp" />
+            style="@style/LogicButtonStyleFor"
+            android:text="@string/Root" />
 
         <Button
             android:id="@+id/buttonOfNumDivided"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/logicbuttenshape"
-            android:text="÷"
-
-            android:textColor="@color/buttonColor"
-            android:textSize="30dp" />
+            style="@style/LogicButtonStyleFor"
+            android:text="@string/Divide" />
 
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/verticalFirst"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-
-        >
+        style="@style/LinearStyle">
 
         <Button
             android:id="@+id/buttonOfNumOne"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/buttonshape"
-            android:text="1"
-
-            android:textColor="@color/buttonColor"
-            android:textSize="50dp" />
+            style="@style/NumberButtonStyleForBlack"
+            android:text="@string/One" />
 
         <Button
             android:id="@+id/buttonOfNumTwo"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/buttonshape"
-            android:text="2"
-
-            android:textColor="@color/buttonColor"
-            android:textSize="50dp" />
+            style="@style/NumberButtonStyleForBlack"
+            android:text="@string/Two" />
 
         <Button
             android:id="@+id/buttonOfNumthree"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/buttonshape"
-            android:text="3"
+            style="@style/NumberButtonStyleForBlack"
+            android:text="@string/Three"
 
-            android:textColor="@color/buttonColor"
-            android:textSize="50dp" />
+            />
 
         <Button
             android:id="@+id/buttonOfNumMultiple"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/logicbuttenshape"
-            android:text="✖"
-
-            android:textColor="@color/buttonColor"
-            android:textSize="50dp" />
+            style="@style/NumberButtonStyleFor"
+            android:text="@string/MultNew" />
 
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/verticaltwo"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal"
+        style="@style/LinearStyle"
 
         >
 
         <Button
             android:id="@+id/buttonOfNumFour"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/buttonshape"
-            android:text="4"
-
-            android:textColor="@color/buttonColor"
-            android:textSize="50dp" />
+            style="@style/NumberButtonStyleForBlack"
+            android:text="@string/Four" />
 
         <Button
             android:id="@+id/buttonOfNumFive"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/buttonshape"
-            android:text="5"
-
-            android:textColor="@color/buttonColor"
-            android:textSize="50dp" />
+            style="@style/NumberButtonStyleForBlack"
+            android:text="@string/Five" />
 
         <Button
             android:id="@+id/buttonOfNumSix"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/buttonshape"
-            android:text="6"
-
-            android:textColor="@color/buttonColor"
-
-            android:textSize="50dp" />
+            style="@style/NumberButtonStyleForBlack"
+            android:text="@string/Six" />
 
         <Button
             android:id="@+id/buttonOfNumPlus"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/logicbuttenshape"
-            android:text="+"
-
-            android:textColor="@color/buttonColor"
-
-            android:textSize="60dp"
-
-            android:textStyle="bold" />
+            style="@style/NumberButtonStyleFor"
+            android:text="@string/Plus" />
 
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/verticalthree"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal"
+        style="@style/LinearStyle"
 
         >
 
         <Button
             android:id="@+id/buttonOfSeven"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/buttonshape"
-            android:text="7"
-
-            android:textColor="@color/buttonColor"
-            android:textSize="50dp" />
+            style="@style/NumberButtonStyleForBlack"
+            android:text="@string/Seven" />
 
         <Button
             android:id="@+id/buttonOfNumEight"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/buttonshape"
-            android:text="8"
-
-            android:textColor="@color/buttonColor"
-            android:textSize="50dp" />
+            style="@style/NumberButtonStyleForBlack"
+            android:text="@string/Eight" />
 
         <Button
             android:id="@+id/buttonOfNumNine"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/buttonshape"
-            android:text="9"
-
-            android:textColor="@color/buttonColor"
-            android:textSize="50dp" />
+            style="@style/NumberButtonStyleForBlack"
+            android:text="@string/Nine" />
 
         <Button
             android:id="@+id/buttonOfNumMinus"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/logicbuttenshape"
-            android:text="−"
-
-
-            android:textColor="@color/buttonColor"
-
-            android:textSize="50dp" />
+            style="@style/NumberButtonStyleFor"
+            android:text="@string/Minus" />
 
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/verticalfoor"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+        style="@style/LinearStyle">
 
         <Button
             android:id="@+id/buttonOfNumClear"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/buttonshape"
-            android:text="C"
-
-            android:textColor="@color/buttonColor"
-            android:textSize="50dp" />
+            style="@style/NumberButtonStyleForBlack"
+            android:text="@string/Clear" />
 
         <Button
             android:id="@+id/buttonOfNumZero"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/buttonshape"
-            android:text="0"
+            style="@style/NumberButtonStyleForBlack"
+            android:text="@string/Zero" />
+        <Button
+            android:id="@+id/buttonOfNumDot"
+            style="@style/NumberButtonStyleForBlack"
+            android:text="@string/Dot" />
 
-            android:textColor="@color/buttonColor"
-            android:textSize="50dp" />
-
-        <!--<Button-->
-            <!--android:id="@+id/buttonOfNumDot"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="1"-->
-            <!--android:background="@drawable/buttonshape"-->
-            <!--android:text="."-->
-
-            <!--android:textColor="@color/buttonColor"-->
-            <!--android:textSize="70dp"-->
-            <!--android:textStyle="bold" />-->
 
         <Button
             android:id="@+id/buttonOfNumEqual"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="0.7"
-            android:background="@drawable/logicbuttenshape"
-            android:text="="
-
-            android:textColor="@color/buttonColor"
-            android:textSize="50dp"
-            android:textStyle="bold" />
+            style="@style/EqualButtonStyleFor"
+            android:text="@string/Equal" />
 
 
     </LinearLayout>

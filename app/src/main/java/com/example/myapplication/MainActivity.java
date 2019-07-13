@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
 
+
+
+
         Log.d(TAG, "THE onCreate METHOD IS CRATED <<onCreate>>");
 
 
@@ -52,12 +55,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.buttonOfNumPlus).setOnClickListener(this);
         findViewById(R.id.buttonOfNumMinus).setOnClickListener(this);
         findViewById(R.id.buttonOfNumPercent).setOnClickListener(this);
-        findViewById(R.id.buttonOfNumSquare).setOnClickListener(this);
+        findViewById(R.id.buttonOfNumPlusMinus).setOnClickListener(this);
         findViewById(R.id.buttonOfRoot).setOnClickListener(this);
         findViewById(R.id.buttonOfNumEqual).setOnClickListener(this);
         findViewById(R.id.buttonOfNumClear).setOnClickListener(this);
         findViewById(R.id.buttonOfNumDivided).setOnClickListener(this);
         findViewById(R.id.buttonOfNumMultiple).setOnClickListener(this);
+        findViewById(R.id.buttonOfNumDot).setOnClickListener(this);
 
 
     }
@@ -235,11 +239,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         && TextUtils.isEmpty(secondTextValue)) {
 
                     firstValue = Integer.valueOf(displayValue);
-                    displayValue += "✖";
+                    displayValue += "×";
                 } else if (!TextUtils.isEmpty(secondTextValue)) {
                     secondValue = Integer.valueOf(secondTextValue);
                     firstValue = firstValue * secondValue;
-                    displayValue = firstValue + "✖";
+                    displayValue = firstValue + "×";
 
                     secondTextValue = "";
                 }
@@ -294,7 +298,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 */
 
                 break;
-            case R.id.buttonOfNumSquare:
+            case R.id.buttonOfNumPlusMinus:
                 firstValue = Integer.valueOf(displayValue);
                 displayValue = String.valueOf(Math.pow(firstValue,2));
                 textForResult.setText(displayValue);
@@ -316,7 +320,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (displayValue.indexOf("+") >= 0) {
                     result = firstValue + secondValue;
                 }
-                if (displayValue.indexOf("✖") >= 0) {
+                if (displayValue.indexOf("×") >= 0) {
                     result = firstValue * secondValue;
                 }  if (displayValue.indexOf("％") >= 0) {
                     result = firstValue * (secondValue/10);

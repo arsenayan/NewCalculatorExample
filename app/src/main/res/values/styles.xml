@@ -1,15 +1,100 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="MyButton" parent="Theme.AppCompat.Light">
-        <item name="colorControlHighlight"></item>
-        <item name="colorButtonNormal"> </item>
+
+    <style name="MarginLinearStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/colorBlack</item>
+
+    </style><style name="ForTextLinear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+
+
     </style>
 
+    <style name="LogicButtonStyleFor">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/buttonColor</item>
+        <item name="android:background">@drawable/logicbuttenshape</item>
+    </style>
+
+    <style name="NumberButtonStyleFor">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/buttonColor</item>
+        <item name="android:background">@drawable/logicbuttenshape</item>
+
+    </style>
+<style name="NumberButtonStyleForBlack">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/buttonColor</item>
+    <item name="android:background">@drawable/buttonshape</item>
+    </style>
+
+    <style name="EqualButtonStyleFor">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/buttonColor</item>
+        <item name="android:background">@drawable/logicbuttenshape</item>
+    </style>
+
+    <style name="LinearStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0sp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+  <style name="LogicLinearStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70sp</item>
+        <item name="android:orientation">horizontal</item>
+  </style>
+
+    <style name="TextScreenStyle">
+       <item name="android:gravity">end</item>
+        <item name="android:padding">15sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100sp</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/buttonColor</item>
+        <item name="android:text">@string/Zero</item>
+
+    </style> <style name="TextResultStyle">
+
+    <item name="android:text">@string/Result</item>
+       <item name="android:gravity">end</item>
+        <item name="android:padding">5sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50sp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/buttonColor</item>
+
+    </style>
 </resources>
